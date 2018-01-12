@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="53dp"
+        android:layout_y="53dp"
+        android:text="用户名" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="55dp"
+        android:layout_y="112dp"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_x="127dp"
+        android:layout_y="88dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="33dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="124dp"
+        android:layout_y="167dp"
+        android:text="登录" />
+
+
+</AbsoluteLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 这个图片是在容器中央的 -->
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/four"/>
+
+    <!-- 这个图片在中间图片的左边 -->
+    <ImageView
+        android:id="@+id/im_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/img_1"
+        android:layout_centerVertical="true"
+        android:src="@drawable/one"/>
+
+    <!-- 这个图片在中间图片的右边 -->
+    <ImageView
+        android:id="@+id/im_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/img_1"
+        android:layout_centerVertical="true"
+        android:src="@drawable/three"/>
+
+    <!-- 这个图片在中间图片的上面-->
+    <ImageView
+        android:id="@+id/im_4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/img_1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/five"/>
+
+    <!-- 这个图片在中间图片的下面 -->
+    <ImageView
+        android:id="@+id/img_5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/img_1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/two"/>
+</RelativeLayout>

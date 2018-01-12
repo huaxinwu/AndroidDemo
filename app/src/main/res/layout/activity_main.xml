@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- ScrollView只能包含一个子视图或视图组，在实际项目中，通常包含的是一个垂直的LinearLayout  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_frame"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="FrameLayout"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="start"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="stop"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="发送标准广播"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_local"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="发送本地广播"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="插入数据"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入文件名"/>
+        <EditText
+            android:id="@+id/et_filename"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:minLines="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入文件内容"/>
+        <EditText
+            android:id="@+id/et_filecontent"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:minLines="2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="写入"/>
+            <Button
+                android:id="@+id/btn_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="清空"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="读取文件内容"/>
+
+        <Button
+            android:id="@+id/btn_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="SharedPreferences"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_sqlite"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="SQLite"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_httpget"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="HttpRULConnectionGet"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Handler"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_sockettotcp"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="SocketToTcp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

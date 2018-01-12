@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/pig"
+    android:foregroundGravity="right|bottom">
+    <!-- 帧布局，父控件大小由子元素决定，
+    如果控件的大小一样的话，
+    同一时间，后面的元素会覆盖前面元素 ,
+    只有前景图像不会被覆盖，可以设置其位置
+    -->
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#FF6143"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#7BFE00"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFF00"/>
+
+</FrameLayout>

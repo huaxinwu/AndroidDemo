@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wxh.myapplication">
+
+    <!-- 静态注册广播，开机就能收到广播，用户访问权限uses-permission -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 弹出对话框，用户访问权限uses-permission -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 联网权限，用户访问权限uses-permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <!-- 配置一个意图过滤器 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 配置一个活动 -->
+        <activity android:name=".GirlActivity" />
+        <activity android:name=".MyActivity" />
+        <activity android:name=".TransferDataActivity" />
+        <activity android:name=".BaseActivity" />
+        <!-- 配置一个服务,隐式启动 -->
+        <service android:name=".MyService">
+            <intent-filter>
+                <action android:name="com.wxh.myapplication.MYSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyIntentService">
+            <intent-filter>
+                <action android:name="com.wxh.myapplication.MYINTENTSERVICE" />
+            </intent-filter>
+        </service>
+        <!-- 配置一个广播接收器 -->
+        <receiver android:name=".MyReceiver" />
+        <!-- 配置一个静态注册广播接收器,隐式注册 -->
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- 配置一个标准广播 -->
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.wxh.broadcast.MYBROADCAST" />
+            </intent-filter>
+        </receiver>
+        <!-- 账号下线 -->
+        <activity android:name=".LoginActivity" />
+
+        <receiver android:name=".MyLoginReceiver" />
+
+        <!-- 配置一个内容提供者 -->
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.wxh.providers.myprovider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MySharedPreferencesActivity" />
+        <activity android:name=".SQLiteAPIActivity" />
+        <activity android:name=".HttpGetActivity" />
+        <activity android:name=".MyHandlerActivity" />
+    </application>
+
+</manifest>
